@@ -23,6 +23,10 @@ img {
     flex-wrap: wrap;
 }
 
+.direction_col {
+    flex-direction: column;
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
@@ -88,8 +92,9 @@ img {
 /* #endregion utilities */
 
 /* #region debug */
-.debug footer {
-    background-color: var(--md-grey);
+.debug .sidebar {
+    background-color: red;
+
 }
 
 /* #endregion debug */
@@ -99,11 +104,21 @@ main {
     height: calc(100vh - 100px);
 }
 
+.sidebar {
+    width: 50px;
+    height: calc(100vh - 100px);
+}
+
+.content {
+    width: calc(100% - 50px);
+}
+
 /* #endregion Main */
 
 /* #region footer */
 footer {
     height: 100px;
+    background-color: var(--md-grey);
 }
 
 /* #endregion footer */

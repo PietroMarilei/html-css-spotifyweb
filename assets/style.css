@@ -10,11 +10,18 @@ img {
 }
 
 :root {
-    --black: #12171d;
-    --dark-grey: #141922;
+    --black: #000000;
+    --dark-grey: #191e28;
     --md-grey: #282828;
     --light-grey: #a3a3a3;
     --white: #ffff;
+}
+
+body {
+    font-family: 'Circular Std',
+        sans-serif;
+    color: var(--white);
+    font-size: 0.7rem;
 }
 
 /* #region utilities */
@@ -36,8 +43,10 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem 0;
+}
 
+.centered {
+    justify-content: center;
 }
 
 /* tutte le col_ hanno un padding laterale di 1 rem */
@@ -97,21 +106,18 @@ img {
 
 /* #region debug */
 .debug [class^="col_"] {
-    height: 100px;
-    border: 2px dashed;
+    /* height: 100px; */
+    border: 1px dashed white;
 }
 
-/* .debug .album {
-    background-color: red;
-    height: 200px;
-    width: 200px;
-} */
+
 
 /* #endregion debug */
 
 /* #region Main */
 main {
     height: calc(100vh - 100px);
+    background-color: var(--dark-grey);
 }
 
 .sidebar {
@@ -124,9 +130,38 @@ main {
 
 .content {
     width: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+.upgrade {
+    text-align: end;
+    padding: 1rem 0;
+    text-align: end;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.482);
+}
+
+.upgrade p {
+    display: inline;
+    font-size: 0.8rem;
+    padding: 0.7rem 2.3rem;
+    border: 2px solid white;
+    border-radius: 40px;
 }
 
 /* #endregion content */
+
+/* #region navigation */
+.navigation {
+    padding: 1rem 0;
+}
+
+.navigation ul {
+    align-items: center;
+    font-size: 0.5rem;
+}
+
+/* #endregion navigation */
 
 /* #endregion Main */
 
@@ -141,6 +176,16 @@ footer {
 
 /* #region MediaQueries */
 @media screen and (min-width:480px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        width: calc(100% - 200px)
+    }
+}
+
+@media screen and (min-width:768px) {
     /* #region COL */
 
     .col_md_12 {
@@ -190,7 +235,7 @@ footer {
     /* #endregion COL */
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
     /* #region COL */
 
     .col_lg_12 {
@@ -239,7 +284,5 @@ footer {
 
     /* #endregion COL */
 }
-
-@media screen and (min-width:1024px) {}
 
 /* #endregion MediaQueries */

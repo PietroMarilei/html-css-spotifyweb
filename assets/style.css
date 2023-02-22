@@ -167,6 +167,58 @@ main {
 
 /* #endregion navigation */
 
+/* #region Recently Played */
+.recently_played>h2 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+/* #region album */
+.album {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.album h4 {
+    padding: 0.5rem 0;
+    color: var(--text-grey);
+
+}
+
+/* #endregion album */
+
+/*  #endregion recently_played */
+
+/* #region for_you */
+.for_you>h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.for_you>h3 {
+    padding: 0rem 0.5rem 1rem;
+    color: var(--text-grey);
+}
+
+/* #endregion for_you */
+
+/* #region popular */
+.popular>h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.popular>h3 {
+    padding: 0rem 0.5rem 1rem;
+    color: var(--text-grey);
+}
+
+.popular img {
+    border-radius: 50%;
+}
+
+/* #endregion popular */
+
 /* #endregion Main */
 
 /* #region footer */

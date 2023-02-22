@@ -15,6 +15,7 @@ img {
     --md-grey: #282828;
     --light-grey: #a3a3a3;
     --white: #ffff;
+    --text-grey: #7A7D81
 }
 
 body {
@@ -51,7 +52,7 @@ body {
 
 /* tutte le col_ hanno un padding laterale di 1 rem */
 [class^="col_"] {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 /* #region COL */
@@ -152,13 +153,16 @@ main {
 /* #endregion content */
 
 /* #region navigation */
-.navigation {
+.navigation .col_12 {
     padding: 1rem 0;
+    text-align: center;
 }
 
-.navigation ul {
-    align-items: center;
-    font-size: 0.5rem;
+.navigation li {
+    display: inline-block;
+    color: var(--text-grey);
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
 }
 
 /* #endregion navigation */

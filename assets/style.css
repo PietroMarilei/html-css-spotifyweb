@@ -37,7 +37,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem 0;
-    margin: 0 -1rem;
+
 }
 
 /* tutte le col_ hanno un padding laterale di 1 rem */

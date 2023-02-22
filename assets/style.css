@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --black: #12171d;
+    --dark-grey: #141922;
+    --md-grey: #282828;
+    --light-grey: #a3a3a3;
+    --white: #ffff;
+}
+
+/* #region utilities */
+.d_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    margin: 0 -1rem;
+}
+
+/* tutte le col_ hanno un padding laterale di 1 rem */
+[class^="col_"] {
+    padding: 0 1rem;
+}
+
+/* #region COL */
+
+.col_12 {
+    width: calc(100%/12 * 12);
+}
+
+.col_11 {
+    width: calc(100%/12 * 11);
+}
+
+.col_10 {
+    width: calc(100%/12 * 10);
+}
+
+.col_9 {
+    width: calc(100%/12 * 9);
+}
+
+.col_8 {
+    width: calc(100%/12 * 8);
+}
+
+.col_7 {
+    width: calc(100%/12 * 7);
+}
+
+.col_6 {
+    width: calc(100%/12 * 6);
+}
+
+.col_5 {
+    width: calc(100%/12 * 5);
+}
+
+.col_4 {
+    width: calc(100%/12 * 4);
+}
+
+.col_3 {
+    width: calc(100%/12 * 3);
+}
+
+/* #endregion COL */
+
+/* #endregion utilities */
+
+/* #region debug */
+.debug footer {
+    background-color: var(--md-grey);
+}
+
+/* #endregion debug */
+
+/* #region Main */
+main {
+    height: calc(100vh - 100px);
+}
+
+/* #endregion Main */
+
+/* #region footer */
+footer {
+    height: 100px;
+}
+
+/* #endregion footer */
+
+
+/* #region MediaQueries */
+@media screen and (min-width:480px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1024px) {}
+
+/* #endregion MediaQueries */

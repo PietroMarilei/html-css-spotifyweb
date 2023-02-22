@@ -36,7 +36,7 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin: 0 -1rem;
 }
 
@@ -92,10 +92,7 @@ img {
 /* #endregion utilities */
 
 /* #region debug */
-.debug .sidebar {
-    background-color: red;
 
-}
 
 /* #endregion debug */
 
@@ -107,11 +104,16 @@ main {
 .sidebar {
     width: 50px;
     height: calc(100vh - 100px);
+    background-color: var(--black);
 }
+
+/* #region content */
 
 .content {
     width: calc(100% - 50px);
 }
+
+/* #endregion content */
 
 /* #endregion Main */
 

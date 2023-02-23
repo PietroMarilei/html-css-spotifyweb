@@ -24,6 +24,7 @@ body {
     font-size: 0.7rem;
 }
 
+
 /* #region utilities */
 .d_flex {
     display: flex;
@@ -53,6 +54,8 @@ body {
 [class^="col_"] {
     padding: 0 0.5rem;
 }
+
+
 
 /* #region COL */
 
@@ -110,8 +113,21 @@ body {
     border: 1px dashed white;
 }
 
+[class*="player"] {
+    border: 2px dashed white;
+}
 
+/* .top_center_player{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+} */
 
+/* .right_player {
+    background-color: yellow;
+    height: 50px;
+    width: 100px;
+} */
 /* #endregion debug */
 
 /* #region Main */
@@ -332,13 +348,101 @@ main {
 
 /* #endregion Main */
 
+/* #endregion main */
+
+
 /* #region footer */
 footer {
+    flex-wrap: nowrap;
     position: sticky;
     width: 100%;
     height: 100px;
     background-color: var(--md-grey);
+    justify-content: space-between;
+    align-items: center;
 }
+
+/* #region left player */
+.left_player {
+    align-items: center;
+}
+
+.left_player img {
+    width: 70px;
+    padding: 0.5rem;
+}
+
+.left_player h3 {
+    color: var(--text-grey);
+}
+
+.left_icons i {
+    display: block;
+    padding: 0.3rem;
+    font-size: 1rem;
+    color: var(--text-grey);
+}
+
+/* #endregion left player */
+
+/* #region center player */
+.center_player {
+    flex-grow: 1;
+    align-items: center;
+}
+
+.top_center_player {
+    align-items: center;
+}
+
+.top_center_player i {
+    padding: 0 0.3rem;
+    padding-bottom: 1rem;
+}
+
+.bottom_center_player {
+    text-align: center;
+    min-width: 90%;
+}
+
+.progression {
+    display: inline-block;
+    height: 5px;
+    width: 60%;
+    background-color: var(--light-grey);
+    border-radius: 20px;
+    text-align: start;
+    position: relative;
+    top: 3px;
+}
+
+.progression_white {
+    display: inline-block;
+    height: 5px;
+    width: 20%;
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+    top: -5px;
+}
+
+/* #endregion center player */
+
+/* #region right player */
+.right_player {
+    /* width: 20%; */
+    text-align: center;
+}
+
+.volume {
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+/* #endregion right player */
 
 /* #endregion footer */
 

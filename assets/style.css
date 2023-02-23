@@ -113,9 +113,9 @@ body {
     border: 1px dashed white;
 }
 
-[class*="player"] {
+/* [class*="player"] {
     border: 2px dashed white;
-}
+} */
 
 /* .top_center_player{
     background-color: red;
@@ -430,16 +430,49 @@ footer {
 
 /* #region right player */
 .right_player {
-    /* width: 20%; */
+    min-width: 20%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_player_icons {
+
+    padding-bottom: 0.3rem;
+}
+
+.right_player_icons i {
+    padding: 0.3rem;
+}
+
+.volume_selector {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.volume_selector i {
+
+    padding: 0.3rem;
 }
 
 .volume {
     display: inline-block;
-    width: 30px;
+    width: 70px;
+    height: 5px;
+    background-color: var(--text-grey);
+    border-radius: 20px;
+    text-align: start;
+}
+
+.volume_white {
+    display: inline-block;
+    width: 25px;
     height: 5px;
     background-color: var(--white);
     border-radius: 20px;
+    position: relative;
+    top: -5px;
+
 }
 
 /* #endregion right player */
@@ -448,7 +481,7 @@ footer {
 
 
 /* #region MediaQueries */
-@media screen and (min-width:480px) {
+@media screen and (min-width:639px) {
     .sidebar {
         width: 200px;
     }
@@ -471,7 +504,7 @@ footer {
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:878px) {
     /* #region COL */
 
     .col_md_12 {
@@ -521,7 +554,7 @@ footer {
     /* #endregion COL */
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1200px) {
     /* #region COL */
 
     .col_lg_12 {

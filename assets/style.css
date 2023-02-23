@@ -129,15 +129,25 @@ main {
 
 /* #region -------------sidebar */
 .sidebar_container {
-    width: calc(100% - 1rem);
-    padding-left: 1rem;
+    width: calc(100% - 20px);
+    align-items: center;
     margin: auto;
+}
+
+.bottom_sidebar {
+    position: absolute;
+    bottom: 0;
+    margin: 1rem 0;
 }
 
 /* #region spotify_logo */
 .spotify_logo {
     align-items: center;
     padding: 1rem 0;
+}
+
+.spotify_logo h1 {
+    padding: 0 0.5rem;
 }
 
 /* #endregion spotify_logo */
@@ -194,12 +204,32 @@ main {
 
 /* #region install_app */
 .install_app {
-    position: absolute;
-    bottom: 0;
     color: var(--text-grey);
 }
 
+#install_hr {
+    width: calc(200px - 2rem);
+    margin: 1rem 0;
+}
+
 /* #endregion install_app */
+
+/* #region user */
+.user {
+    align-items: center;
+}
+
+.user i {
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: var(--light-grey);
+}
+
+.user h3 {
+    padding: 0 0.5rem;
+}
+
+/* #endregion user */
 
 
 /* #region content */
@@ -213,7 +243,6 @@ main {
 .do_upgrade {
     text-align: end;
     padding: 2rem 0;
-    text-align: end;
     color: var(--white);
     background-color: rgba(0, 0, 0, 0.482);
 }
@@ -320,8 +349,17 @@ footer {
         width: 200px;
     }
 
+    .sidebar_container {
+        width: calc(100% - 2rem);
+        margin: auto;
+    }
+
     .hide {
         display: inline;
+    }
+
+    #install_hr {
+        display: block;
     }
 
     .content {

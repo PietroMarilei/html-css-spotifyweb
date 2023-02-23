@@ -19,8 +19,7 @@ img {
 }
 
 body {
-    font-family: 'Circular Std',
-        sans-serif;
+    font-family: 'Circular Std', sans-serif;
     color: var(--white);
     font-size: 0.7rem;
 }
@@ -127,15 +126,57 @@ main {
     background-color: var(--black);
 }
 
+/* #region -------------sidebar */
+
+/* #region spotify_logo */
+.spotify_logo {
+    align-items: center;
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+/* #endregion spotify_logo */
+
+/* #region nav */
+.nav li i {
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+.nav li:nth-child(2),
+.nav li:nth-child(3) {
+    color: var(--text-grey);
+}
+
+.hide {
+    display: none;
+}
+
+/* #endregion nav */
+
+/* #region playlist */
+.playlist h2 {
+    padding: 2rem 0 0.5rem 0.5rem;
+}
+
+.playlist i {
+    padding: 0.5rem;
+    background-color: var(--light-grey);
+    margin: 0 0.5rem;
+    color: var(--black);
+}
+
+/* endregion playlist */
+/* #endregion -------------sidebar */
+
 /* #region content */
-
-
 
 .content {
     width: calc(100% - 50px);
     overflow-y: auto;
 }
 
+/* #region do upgrade */
 .do_upgrade {
     text-align: end;
     padding: 2rem 0;
@@ -152,9 +193,9 @@ main {
     border-radius: 40px;
 }
 
-/* #region -------------sidebar */
+/* #endregion do upgrade */
 
-/* #endregion -------------sidebar */
+
 
 /* #region navigation */
 .navigation .col_12 {
@@ -242,6 +283,10 @@ footer {
 @media screen and (min-width:480px) {
     .sidebar {
         width: 200px;
+    }
+
+    .hide {
+        display: inline;
     }
 
     .content {

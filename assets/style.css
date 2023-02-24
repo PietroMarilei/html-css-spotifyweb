@@ -801,4 +801,14 @@ footer {
     /* #endregion COL */
 }
 
+@media screen and (max-height:450px) {
+    .install_app {
+        display: none;
+    }
+
+    .user {
+        display: none;
+    }
+}
+
 /* #endregion MediaQueries */

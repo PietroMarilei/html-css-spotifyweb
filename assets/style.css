@@ -233,6 +233,24 @@ main {
     overflow-y: auto;
 }
 
+/* -------------------------------- */
+.your_playlist ul::-webkit-scrollbar {
+    width: 4px;
+    /* width of the entire scrollbar */
+}
+
+.your_playlist ul::-webkit-scrollbar-track {
+    background: var(--dark-grey);
+    /* color of the tracking area */
+}
+
+.your_playlist ul::-webkit-scrollbar-thumb {
+    background-color: var(--light-grey);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+}
+
+/* ---------------------------------------- */
 .your_playlist li {
     padding: 0.3rem 0;
     color: var(--text-grey);
@@ -283,6 +301,23 @@ main {
     overflow-y: auto;
 }
 
+.content::-webkit-scrollbar {
+    width: 4px;
+    /* width of the entire scrollbar */
+}
+
+.content::-webkit-scrollbar-track {
+    background: var(--dark-grey);
+    /* color of the tracking area */
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: var(--light-grey);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+
+}
+
 /* #region do upgrade */
 .do_upgrade {
     text-align: end;
@@ -325,7 +360,8 @@ main {
 }
 
 .little_bar {
-    display: none;
+    visibility: hidden;
+    display: inline-block;
     background-color: var(--spotify-green);
     height: 3px;
     width: 30px;
@@ -337,7 +373,7 @@ main {
 }
 
 .mini_container:hover .little_bar {
-    display: inline-block;
+    visibility: visible;
 }
 
 /* #endregion navigation */

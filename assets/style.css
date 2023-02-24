@@ -119,21 +119,6 @@ body {
     border: 1px dashed white;
 }
 
-/* [class*="player"] {
-    border: 2px dashed white;
-} */
-
-/* .top_center_player{
-    background-color: red;
-    height: 50px;
-    width: 100px;
-} */
-
-/* .right_player {
-    background-color: yellow;
-    height: 50px;
-    width: 100px;
-} */
 /* #endregion debug */
 
 /* #region Main */
@@ -212,6 +197,13 @@ main {
     background-color: var(--light-grey);
     margin: 0 0.5rem;
     color: var(--black);
+    border-radius: 5px;
+}
+
+.playlist i:hover {
+    padding: 0.55rem;
+    background-color: var(--white);
+    cursor: pointer;
 }
 
 .playlist>span {
@@ -267,6 +259,11 @@ main {
 /* #region install_app */
 .install_app {
     color: var(--text-grey);
+}
+
+.install_app:hover {
+    color: var(--white);
+    cursor: pointer;
 }
 
 #install_hr {
@@ -332,6 +329,7 @@ main {
     padding: 0.7rem 2.3rem;
     border: 2px solid white;
     border-radius: 40px;
+    margin-right: 0.8rem;
 }
 
 .do_upgrade:hover p {
